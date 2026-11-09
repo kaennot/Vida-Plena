@@ -1,0 +1,48 @@
+VIDA PLENA — SITIO WEB COMPLETO
+================================
+
+INCLUYE
+- Página principal: index.html
+- Salud: salud.html
+- Alimentación: alimentacion.html
+- Movimiento: movimiento.html
+- Bienestar emocional: bienestar.html
+- Acompañamiento: acompanamiento.html
+- Sobre nosotros, misión y visión: nosotros.html
+- Contacto con formulario: contacto.html
+- Aviso de privacidad: privacidad.html
+- Confirmación del mensaje: gracias.html
+- Ilustraciones SVG originales en assets/ (funcionan sin internet)
+- Estilos: styles.css; interacciones: app.js
+- Servidor con almacenamiento: servidor.py
+- Lector de mensajes: ver_mensajes.py
+
+PARA ABRIR LA PÁGINA Y ENVIAR MENSAJES
+1. Descomprime el archivo ZIP.
+2. Abre una terminal en la carpeta vida_plena_nueva.
+3. Ejecuta: python3 servidor.py
+4. En el navegador, visita: http://127.0.0.1:8000
+5. Navega desde Inicio hasta cualquiera de los apartados.
+6. Para probar el formulario, entra a Contacto, llena los campos y envía.
+7. Deberás ver la página «¡Gracias por escribirnos!».
+8. En otra terminal, dentro de la misma carpeta, ejecuta:
+   python3 ver_mensajes.py
+   Así podrás leer los mensajes guardados en private/mensajes.db.
+
+IMPORTANTE
+- También puedes abrir index.html con doble clic y navegar por las páginas,
+  pero EL FORMULARIO REQUIERE que inicies servidor.py como se indica arriba.
+- Los mensajes SE GUARDAN en una base de datos local. NO se envían automáticamente
+  a un correo electrónico; para enviar avisos por email se debe configurar un
+  servicio SMTP o API de correo (no se incluyen credenciales ficticias).
+- Esto es un prototipo local. Antes de publicarlo, debes configurar hosting
+  compatible con Python, HTTPS, una protección anti-spam más robusta, una
+  política de tratamiento de datos adecuada y canales reales de contacto.
+- Las imágenes son ilustraciones SVG incluidas en el proyecto. No dependen
+  de servicios externos ni requieren internet.
+- Los botones A+ / A− permiten cambiar el tamaño de la letra.
+- La información médica es general, con enlaces a MedlinePlus y OMS.
+
+PRIVACIDAD
+La base de datos private/mensajes.db puede contener datos personales. No la
+compartas con otras personas. No publiques esa carpeta en servidores estáticos.
